@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="simplegallery.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.touchSwipe.min.js"></script>
+
+<script type="text/javascript" src="simplegallery.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery1", 
+	dimensions: [900, 450], 
+	imagearray: [
+		["sunflower1.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", ""],
+		["sunflower2.jpg", "http://en.wikipedia.org/wiki/Cave", "", ""],
+		["sunflower3.jpg", "", "", ""],
+		["sunflower4.jpg", "", "", ""],
+		["sunflower5.jpg", "", "", ""]
+	],
+	autoplay: [true, 2500, 2], 
+	persist: false,
+	scaleimage: 'both', 
+	fadeduration: 500,
+	oninit:function(){ 
+	},
+	onslide:function(curslide, i){
+	}
+})
+
+</script>
+</script>
+</head>
+<body>
+<div style="width:250px;height: 1800px;"id="simplegallery1" class="simplegallery"></div>
+</body>
+</html>
